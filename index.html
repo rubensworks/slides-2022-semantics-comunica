@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="node_modules/shower-material/styles/styles.css">
-    <link rel="stylesheet" href="styles/rt-custom.css" />
+    <link rel="stylesheet" href="styles/comunica-custom.css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
     
@@ -33,18 +33,52 @@
     </header>
 
     <section id="title" class="slide title" inlist="" rel="schema:hasPart" resource="#title">
-      <h2 property="schema:name">Querying Knowledge Graphs on the Web with Comunica</h2>
+      <h2 property="schema:name" style="font-size: 2.7em">Querying Knowledge Graphs on the Web with Comunica</h2>
       <ul class="author inline">
           <li class="current"><a href="https://www.rubensworks.net/">Ruben Taelman</a></li>
       </ul>
       <p class="affiliation"><a href="http://idlab.technology/">Ghent University – imec – IDLab, Belgium</a></p>
     </section>
 
-    <section id="start" class="slide" style="background-image: url('img/TODO.jpg')" inlist="" rel="schema:hasPart" resource="#start">
-        <h2 property="schema:name" class="big" style="margin-top: 20px; color: white; text-shadow: 2px 2px black">INTRO</h2>
+    <section id="start" class="slide" style="background-image: url('img/diamond.jpg')" inlist="" rel="schema:hasPart" resource="#start">
+        <h2 property="schema:name" class="big" style="margin-top: 20px; color: white; text-shadow: 2px 2px black">Knowledge Graphs on the Web<br />are a multifaceted story</h2>
         <ul style="color: white; text-shadow: 2px 2px black; font-size: 1.3em">
-            <li>TODO</li>
+            <li>Publication APIs</li>
+            <li>Access patterns</li>
+            <li>Query languages</li>
+            <li>...</li>
         </ul>
+    </section>
+    
+    <section id="complexity-devs" class="slide" inlist="" rel="schema:hasPart" resource="#complexity-devs">
+        <h2 property="schema:name" class="big" style="margin-top: 20px">Difficulties for app developers</h2>
+        <ul>
+            <li>
+              <h3>Distinguishing APIs</h3>
+  			  <span class="indent" style="font-style:italic">What kind of API is this?</span>
+            </li>
+            <li>
+              <h3>Interacting with APIs</h3>
+  			  <span class="indent" style="font-style:italic">How to efficiently get data from this API?</span>
+            </li>
+            <li>
+              <h3>Combining APIs</h3>
+  			  <span class="indent" style="font-style:italic">How to combine data across different APIs?</span>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="connection-point" class="slide" inlist="" rel="schema:hasPart" resource="#connection-point">
+        <h2 property="schema:name" class="big" style="margin-top: 20px">Abstract access to Knowledge Graphs</h2>
+        <h3>Hide the complexities of reading and writing for app developers</h3>
+        <center>
+            <img src="img/computer.png" alt="Application" width="150px" style="margin-right: 20px" />
+            <span style="font-size: 6em; vertical-align: baseline; position: relative; top: -40px">&harr;</span>
+            <img src="img/comunica_red.svg" alt="Comunica Logo" width="170px" />
+            <span style="font-size: 6em; vertical-align: baseline; position: relative; top: -40px">&harr;</span>
+            <img src="img/globe.png" alt="Globe" width="150px" style="margin-left: 20px" />
+        </center>
+        <p style="text-align: right; font-style: italic"><a href="https://www.flaticon.com/free-icons/application" title="application icons">Image credit</a></p>
     </section>
 	
     <section id="index" class="slide index" inlist="" rel="schema:hasPart" resource="#index">
