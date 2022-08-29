@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="shower/themes/material/styles/styles.css">
-    <link rel="stylesheet" href="styles/rt-custom.css" />
+    <link rel="stylesheet" href="styles/comunica-custom.css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
     
@@ -33,48 +33,303 @@
     </header>
 
     <section id="title" class="slide title" inlist="" rel="schema:hasPart" resource="#title">
-      <h2 property="schema:name">Querying Knowledge Graphs on the Web with Comunica</h2>
+      <h2 property="schema:name" style="font-size: 2.7em">Querying Knowledge Graphs on the Web with Comunica</h2>
       <ul class="author inline">
           <li class="current"><a href="https://www.rubensworks.net/">Ruben Taelman</a></li>
       </ul>
       <p class="affiliation"><a href="http://idlab.technology/">Ghent University – imec – IDLab, Belgium</a></p>
+      
+      <br \>
+      <h4>Comunica is sponsored by</h4>
+      <center>
+      <a href="https://www.ugent.be/ea/idlab/en"><img src="img/sponsor_idlab.png" alt="IDLab" height="60px" /></a>
+      <a href="https://netwerkdigitaalerfgoed.nl/"><img src="img/sponsor_nde.png" alt="NDE" height="60px" style="margin: 0 50px 0 50px" /></a>
+      <a href="https://www.vlaanderen.be/digitaal-vlaanderen"><img src="img/sponsor_dv.png" alt="Digitaal Vlaanderen" height="60px" style="margin: 0 50px 0 0" /></a>
+      <a href="https://cecs.anu.edu.au/"><img src="img/sponsor_anu.svg" alt="Australian National University" height="60px" /></a>
+      </center>
     </section>
 
-    <section id="start" class="slide" style="background-image: url('img/TODO.jpg')" inlist="" rel="schema:hasPart" resource="#start">
-        <h2 property="schema:name" class="big" style="margin-top: 20px; color: white; text-shadow: 2px 2px black">INTRO</h2>
+    <section id="start" class="slide" style="background-image: url('img/diamond.jpg')" inlist="" rel="schema:hasPart" resource="#start">
+        <h2 property="schema:name" class="big" style="margin-top: 20px; color: white; text-shadow: 2px 2px black">Knowledge Graphs on the Web<br />are a multifaceted story</h2>
         <ul style="color: white; text-shadow: 2px 2px black; font-size: 1.3em">
-            <li>TODO</li>
+            <li>Publication APIs</li>
+            <li>Access patterns</li>
+            <li>Query languages</li>
+            <li>...</li>
         </ul>
+    </section>
+    
+    <section id="complexity-devs" class="slide" inlist="" rel="schema:hasPart" resource="#complexity-devs">
+        <h2 property="schema:name" class="big" style="margin-top: 20px">Difficulties for app developers</h2>
+        <ul>
+            <li>
+              <h3>Distinguishing APIs</h3>
+  			  <span class="indent" style="font-style:italic">What kind of API is this?</span>
+            </li>
+            <li>
+              <h3>Interacting with APIs</h3>
+  			  <span class="indent" style="font-style:italic">How to efficiently get data from this API?</span>
+            </li>
+            <li>
+              <h3>Combining APIs</h3>
+  			  <span class="indent" style="font-style:italic">How to combine data across different APIs?</span>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="connection-point" class="slide" inlist="" rel="schema:hasPart" resource="#connection-point">
+        <h2 property="schema:name" class="big" style="margin-top: 20px">Abstract access to Knowledge Graphs</h2>
+        <h3>Hide the complexities of reading and writing for app developers</h3>
+        <center>
+            <img src="img/computer.png" alt="Application" width="150px" style="margin-right: 20px" />
+            <span style="font-size: 6em; vertical-align: baseline; position: relative; top: -40px">&harr;</span>
+            <img src="img/comunica_red.svg" alt="Comunica Logo" width="170px" />
+            <span style="font-size: 6em; vertical-align: baseline; position: relative; top: -40px">&harr;</span>
+            <img src="img/globe.png" alt="Globe" width="150px" style="margin-left: 20px" />
+        </center>
+        <p style="text-align: right; font-style: italic"><a href="https://www.flaticon.com/free-icons/application" title="application icons">Image credit</a></p>
     </section>
 	
     <section id="index" class="slide index" inlist="" rel="schema:hasPart" resource="#index">
       <ul>
-        <li><a href="#index-a">TODO</a></li>
-		<li><a href="#index-b">TODO</a></li>
+        <li><a href="#index-howitworks">How it works</a></li>
+		<li><a href="#index-gettingstarted">Getting started</a></li>
+        <li><a href="#index-association">Comunica Association</a></li>
       </ul>
     </section>
     
-    <section id="index-a" class="slide index" inlist="" rel="schema:hasPart" resource="#index-a">
+    <section id="index-howitworks" class="slide index" inlist="" rel="schema:hasPart" resource="#index-howitworks">
       <ul>
-        <li class="current"><a href="#index-a">TODO</a></li>
-		<li><a href="#index-b">TODO</a></li>
+        <li class="current"><a href="#index-howitworks">How it works</a></li>
+		<li><a href="#index-gettingstarted">Getting started</a></li>
+        <li><a href="#index-association">Comunica Association</a></li>
       </ul>
     </section>
 	
-    <section id="some-slide" class="slide" inlist="" rel="schema:hasPart" resource="#some-slide">
-      <h2 property="schema:name">TODO: A regular slide</h2>
+    <section id="query-abstraction" class="slide" inlist="" rel="schema:hasPart" resource="#query-abstraction">
+      <h2 property="schema:name">Queries as abstraction layer</h2>
+      <em>SPARQL, GraphQL, ...</em>
       <ul>
           <li>
-          	  <h3>A</h3>
-			  <span class="indent">TODO: Description</span>
+          	  <h3>Say what needs to happen, not how</h3>
+			  <span class="indent">Declarative queries hide complexities of data retrieval</span>
           </li>
-          <li>B</li>
-          <li>C</li>
+          <li>
+          	  <h3>Queries are reusable</h3>
+			  <span class="indent">Queries are not API-specific</span>
+          </li>
+          <li>
+          	  <h3>Execution via a generic, reusable <em>query engine</em></h3>
+			  <span class="indent">Abstracts away complexities for executing queries</span><br \>
+              <span class="indent">New optimisations can be used by merely updating query engine</span>
+          </li>
+      </ul>
+    </section>
+    
+    <section id="heterogeneous" class="slide" inlist="" rel="schema:hasPart" resource="#heterogeneous">
+      <h2 property="schema:name">Heterogeneity and Federation</h2>
+      <ul>
+          <li>
+          	  <h3>Understanding any source</h3>
+			  <span class="indent">Give it any URL, and Comunica will aim to query it as efficient as possible</span><br \>
+              <span class="indent"><em>Linked Data documents, Triple Pattern Fragments, SPARQL endpoints, ...</em></span>
+          </li>
+          <li>
+          	  <h3>Combining multiple sources</h3>
+			  <span class="indent">Data can be spread over multiple sources</span>
+          </li>
+          <li>
+          	  <h3>Future: source discovery</h3>
+			  <span class="indent">All relevant sources may not always be known beforehand</span><br \>
+              <span class="indent">For fully decentralised data <em>(Solid)</em></span>
+          </li>
+      </ul>
+    </section>
+    
+    <section id="modularity" class="slide" inlist="" rel="schema:hasPart" resource="#modularity">
+      <h2 property="schema:name">Flexible and Modular Meta-Query Engine</h2>
+      <ul>
+          <li>
+          	  <h3>Collection of building blocks</h3>
+			  <span class="indent">160+ independent modules implement specific functionality</span>
+          </li>
+          <li>
+          	  <h3>Combining building blocks</h3>
+			  <span class="indent">Building custom query engines with specific functionality and settings</span><br \>
+              <span class="indent">Using a flexible configuration system</span><br \>
+              <span class="indent">Presets: <em>Comunica SPARQL, Comunica Solid, ...</em></span>
+          </li>
+          <center><img src="img/actor-mediator-bus.svg" alt="Actor Mediator Bus" height="150px" \></center>
+      </ul>
+    </section>
+    
+    <section id="open" class="slide" inlist="" rel="schema:hasPart" resource="#open">
+      <h2 property="schema:name">Comunica is Open</h2>
+      <ul>
+          <li>
+          	  <h3>Open standards</h3>
+			  <span class="indent">Implements Web standards (SPARQL, RDF, ...)</span><br \>
+              <span class="indent">Implemented using Web standards (JavaScript)</span><br \>
+              <span class="indent">Interoperable with other TS/JS libraries using <a href="https://rdf.js.org/">the RDF/JS interfaces</a></span>
+          </li>
+          <li>
+          	  <h3>Open source</h3>
+			  <span class="indent">MIT-licensed: <a href="https://github.com/comunica/comunica">https://github.com/comunica/comunica</a></span>
+          </li>
+          <li>
+          	  <h3>Open governance</h3>
+			  <span class="indent"><a href="https://comunica.dev/association/">Comunica Association</a> connects organisations</span><br \>
+          </li>
+      </ul>
+    </section>
+    
+    <section id="index-gettingstarted" class="slide index" inlist="" rel="schema:hasPart" resource="#index-howitworks">
+      <ul>
+        <li><a href="#index-howitworks">How it works</a></li>
+		<li class="current"><a href="#index-gettingstarted">Getting started</a></li>
+        <li><a href="#index-association">Comunica Association</a></li>
+      </ul>
+    </section>
+    
+    <section id="start-browser" class="slide" inlist="" rel="schema:hasPart" resource="#start-browser">
+      <h2 property="schema:name">Query in the browser</h2>
+      <ul>
+          <li>
+          	  <h3><a href="https://query.linkeddatafragments.org/">https://query.linkeddatafragments.org/</a></h3>
+			  <span class="indent">Client-side querying of sources using SPARQL or GraphQL</span>
+          </li>
+          <iframe src="https://query.linkeddatafragments.org/"></iframe>
+      </ul>
+    </section>
+    
+    <section id="start-cli" class="slide" inlist="" rel="schema:hasPart" resource="#start-cli">
+      <h2 property="schema:name">Query on the command line</h2>
+      <ul>
+          <li>
+          	  <h3>Installing Comunica SPARQL globally</h3>
+              <pre class="indent">$ npm install -g @comunica/query-sparql</pre>
+          </li>
+          <li>
+          	  <h3>Running a SELECT query</h3>
+			  <pre class="indent">$ comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    "SELECT * WHERE { ?s ?p ?o } LIMIT 100"</pre>
+          </li>
+          <li>
+          	  <h3>Running a CONSTRUCT query</h3>
+          	  <pre class="indent">$ comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"</pre>
+          </li>
+      </ul>
+      <span>Learn more: <a href="https://comunica.dev/docs/query/getting_started/query_cli/">https://comunica.dev/docs/query/getting_started/query_cli/</a></span>
+    </section>
+    
+    <section id="start-app" class="slide" inlist="" rel="schema:hasPart" resource="#start-app">
+      <h2 property="schema:name">Query in an JavaScript/TypeScript app</h2>
+      <ul>
+          <li>
+          	  <h3>Installing Comunica SPARQL locally</h3>
+              <pre class="indent">$ npm install @comunica/query-sparql</pre>
+          </li>
+          <li>
+          	  <h3>Creating a new engine</h3>
+			  <pre class="indent">const myEngine = new QueryEngine();</pre>
+          </li>
+          <li>
+          	  <h3>Running a SELECT query</h3>
+          	  <pre class="indent">myEngine.queryBindings(`SELECT...`, { sources: [ 'http...' ]});</pre>
+          </li>
+      </ul>
+      <br \>
+      <span>Learn more: <a href="https://comunica.dev/docs/query/getting_started/query_app/">https://comunica.dev/docs/query/getting_started/query_app/</a></span>
+    </section>
+    
+    <section id="start-more" class="slide" inlist="" rel="schema:hasPart" resource="#start-more">
+      <h2 property="schema:name">More on <a href="https://comunica.dev/docs/">https://comunica.dev/docs/</a></h2>
+      <ul>
+          <li>
+          	  <h3>Getting started guides</h3>
+              <span class="indent">Tutorials on how to use Comunica in different ways</span>
+          </li>
+          <li>
+          	  <h3>Modification guides</h3>
+			  <span class="indent">Tutorials on how to modify and configure custom query engines</span>
+          </li>
+          <li>
+          	  <h3>Internal details</h3>
+          	  <span class="indent">In-depth documentation on the internals and architecture</span>
+          </li>
+      </ul>
+    </section>
+    
+    <section id="index-association" class="slide index" inlist="" rel="schema:hasPart" resource="#index-howitworks">
+      <ul>
+        <li><a href="#index-howitworks">How it works</a></li>
+		<li><a href="#index-gettingstarted">Getting started</a></li>
+        <li class="current"><a href="#index-association">Comunica Association</a></li>
+      </ul>
+    </section>
+    
+    <section id="association" class="slide" inlist="" rel="schema:hasPart" resource="#association">
+        <h2 property="schema:name">The Comunica Association</h2>
+        <ul>
+            <li>
+              <h3>A non-profit for the sustainability of Comunica</h3>
+  			  <span class="indent">Open to anyone</span>
+            </li>
+            <li>
+              <h3>Receives funding from members and sponsors</h3>
+  			  <span class="indent">Pays developers for bugs and features on the roadmap</span><br \>
+              <span class="indent">Members collectively determine the long-term roadmap</span>
+            </li>
+            <li>
+              <h3>Management of bounties</h3>
+  			  <span class="indent">Companies place bounties on bugs/features, claimed by developers</span>
+            </li>
+        </ul>
+        <br \>
+        <center><a href="https://comunica.dev/association/">https://comunica.dev/association/</a></center>
+    </section>
+    
+    <section id="association-bounties" class="slide" inlist="" rel="schema:hasPart" resource="#association-bounties">
+      <h2 property="schema:name">Bounty program</h2>
+      Connecting companies with experienced developers
+      <center>
+      <img src="img/bounties.svg" alt="Bounties" height="400px" />
+      </center>
+    </section>
+    
+    <section id="association-members" class="slide" inlist="" rel="schema:hasPart" resource="#association-members">
+      <h2 property="schema:name">Members and sponsors</h2>
+      Determine the roadmap, and finance its development
+      <center>
+      <img src="img/members.svg" alt="Members" height="400px" />
+      </center>
+    </section>
+    
+    <section id="index-final" class="slide index" inlist="" rel="schema:hasPart" resource="#index-final">
+      <ul>
+        <li><a href="#index-howitworks">How it works</a></li>
+		<li><a href="#index-gettingstarted">Getting started</a></li>
+        <li><a href="#index-association">Comunica Association</a></li>
       </ul>
     </section>
 	
     <section id="conclusion" class="slide" inlist="" rel="schema:hasPart" resource="#conclusion">
-      <h2 property="schema:name" class="big">TODO: Conclusion</h2>
+      <h2 property="schema:name">Comunica abstracts access<br \>to Knowledge Graphs</h2>
+      <ul>
+          <li>
+          	  <h3>Via declarative queries</h3>
+              <span class="indent">SPARQL, GraphQL, ...</span>
+          </li>
+          <li>
+          	  <h3>Runs anywhere</h3>
+			  <span class="indent">CLI, client-side (browsers), server-side (Node.js), ...</span>
+          </li>
+          <li>
+          	  <h3>Open</h3>
+			  <span class="indent">Anyone can use it and contribute</span>
+          </li>
+      </ul>
     </section>
 
     <footer>
